@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "axon": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.23",
+    "@types/react": "^19.1.5"
+  }
+}

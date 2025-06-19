@@ -1,0 +1,87 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      axon:
+        specifier: ^2.0.3
+        version: 2.0.3
+    devDependencies:
+      '@types/react':
+        specifier: ^19.1.5
+        version: 19.1.5
+
+packages:
+
+  '@types/react@19.1.5':
+    resolution: {integrity: sha512-piErsCVVbpMMT2r7wbawdZsq4xMvIAhQuac2gedQHysu1TZYEigE6pnFfgZT+/jQnrRuF5r+SHzuehFjfRjr4g==}
+
+  amp-message@0.1.2:
+    resolution: {integrity: sha512-JqutcFwoU1+jhv7ArgW38bqrE+LQdcRv4NxNw0mp0JHQyB6tXesWRjtYKlDgHRY2o3JE5UTaBGUK8kSWUdxWUg==}
+
+  amp@0.3.1:
+    resolution: {integrity: sha512-OwIuC4yZaRogHKiuU5WlMR5Xk/jAcpPtawWL05Gj8Lvm2F6mwoJt4O/bHI+DHwG79vWd+8OFYM4/BzYqyRd3qw==}
+
+  axon@2.0.3:
+    resolution: {integrity: sha512-zGM15ltKLOMk+/tS6v4ttbCmhNm5uV09FalXc0/cKUcP9nmx5Npg0QO1/xvijvMA+sUzZpQ/0++w1/8Hci5qzQ==}
+    engines: {node: '>= 0.11.8'}
+
+  configurable@0.0.1:
+    resolution: {integrity: sha512-OcGvB6vM11aQlbtNBxN23uqRAGzpbIiKzn4tgT49nF3QPocQ2N3TODH9901HxKNv+eYupA7TCrtRNY1jm/sK8Q==}
+
+  csstype@3.1.3:
+    resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
+
+  debug@4.4.1:
+    resolution: {integrity: sha512-KcKCqiftBJcZr++7ykoDIEwSa3XWowTfNPo92BYxjXiyYEVrUQh2aLyhxBCwww+heortUFxEJYcRzosstTEBYQ==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
+  escape-regexp@0.0.1:
+    resolution: {integrity: sha512-jVgdsYRa7RKxTT6MKNC3gdT+BF0Gfhpel19+HMRZJC2L0PufB0XOBuXBoXj29NKHwuktnAXd1Z1lyiH/8vOTpw==}
+
+  ms@2.1.3:
+    resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
+
+snapshots:
+
+  '@types/react@19.1.5':
+    dependencies:
+      csstype: 3.1.3
+
+  amp-message@0.1.2:
+    dependencies:
+      amp: 0.3.1
+
+  amp@0.3.1: {}
+
+  axon@2.0.3:
+    dependencies:
+      amp: 0.3.1
+      amp-message: 0.1.2
+      configurable: 0.0.1
+      debug: 4.4.1
+      escape-regexp: 0.0.1
+    transitivePeerDependencies:
+      - supports-color
+
+  configurable@0.0.1: {}
+
+  csstype@3.1.3: {}
+
+  debug@4.4.1:
+    dependencies:
+      ms: 2.1.3
+
+  escape-regexp@0.0.1: {}
+
+  ms@2.1.3: {}

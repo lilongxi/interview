@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="id1">
+        <div id="id2">
+            click
+        </div>
+    </div>
+</body>
+<script>
+    // document.body.addEventListener('click', console.log.bind(null, 'c1'), {})
+    // 捕获优先于冒泡执行
+    document.getElementById('id1').addEventListener('click', console.log.bind(null, 'parent bubble')) // 4
+    document.getElementById('id2').addEventListener('click', console.log.bind(null, 'child bubble'))  // 3
+    document.getElementById('id1').addEventListener('click', console.log.bind(null, 'parent captrue'), true) // 1
+    document.getElementById('id2').addEventListener('click', console.log.bind(null, 'child captrue'), true)  // 2
+</script>
+</html>
